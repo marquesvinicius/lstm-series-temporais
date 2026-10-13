@@ -1,0 +1,7 @@
+# ambiente local
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# material pessoal (não faz parte da entrega)
+GUIA_DO_ALUNO.md

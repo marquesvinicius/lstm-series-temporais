@@ -1,0 +1,90 @@
+{
+  "dataset": "Open-Meteo ERA5, Rio Verde-GO, diário 2000-2025",
+  "T": 30,
+  "features": [
+    "temp_media",
+    "temp_max",
+    "temp_min",
+    "umidade",
+    "precipitacao",
+    "radiacao",
+    "dia_sin",
+    "dia_cos"
+  ],
+  "dias_teste": 1900,
+  "periodo_teste": [
+    "2020-10-19",
+    "2025-12-31"
+  ],
+  "epocas": 66,
+  "melhor_epoca": 51,
+  "metricas_teste": {
+    "LSTM (T=30, multivariada)": {
+      "RMSE (°C)": 1.141,
+      "MAE (°C)": 0.783,
+      "R²": 0.794
+    },
+    "Persistência (y=hoje)": {
+      "RMSE (°C)": 1.259,
+      "MAE (°C)": 0.861,
+      "R²": 0.749
+    },
+    "Média móvel 7 dias": {
+      "RMSE (°C)": 1.747,
+      "MAE (°C)": 1.268,
+      "R²": 0.517
+    },
+    "Climatologia (média do dia do ano)": {
+      "RMSE (°C)": 1.962,
+      "MAE (°C)": 1.449,
+      "R²": 0.392
+    }
+  },
+  "experimentos": [
+    {
+      "experimento": "multivariada",
+      "T": 7,
+      "nº de entradas": 8,
+      "épocas": 49,
+      "tempo (s)": 31,
+      "RMSE val (°C)": 0.98,
+      "RMSE teste (°C)": 1.154
+    },
+    {
+      "experimento": "multivariada (modelo principal)",
+      "T": 30,
+      "nº de entradas": 8,
+      "épocas": 66,
+      "tempo (s)": 104,
+      "RMSE val (°C)": 0.963,
+      "RMSE teste (°C)": 1.141
+    },
+    {
+      "experimento": "multivariada",
+      "T": 60,
+      "nº de entradas": 8,
+      "épocas": 45,
+      "tempo (s)": 134,
+      "RMSE val (°C)": 0.995,
+      "RMSE teste (°C)": 1.152
+    },
+    {
+      "experimento": "univariada (só temp_media)",
+      "T": 30,
+      "nº de entradas": 1,
+      "épocas": 57,
+      "tempo (s)": 91,
+      "RMSE val (°C)": 1.03,
+      "RMSE teste (°C)": 1.2
+    },
+    {
+      "experimento": "multivariada, shuffle=False",
+      "T": 30,
+      "nº de entradas": 8,
+      "épocas": 40,
+      "tempo (s)": 68,
+      "RMSE val (°C)": 1.24,
+      "RMSE teste (°C)": 1.288
+    }
+  ]
+}

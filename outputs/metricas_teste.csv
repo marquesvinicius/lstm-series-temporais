@@ -1,0 +1,5 @@
+,RMSE (°C),MAE (°C),R²
+"LSTM (T=30, multivariada)",1.141,0.783,0.794
+Persistência (y=hoje),1.259,0.861,0.749
+Média móvel 7 dias,1.747,1.268,0.517
+Climatologia (média do dia do ano),1.962,1.449,0.392

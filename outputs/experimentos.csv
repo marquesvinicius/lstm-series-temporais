@@ -1,0 +1,6 @@
+experimento,T,nº de entradas,épocas,tempo (s),RMSE val (°C),RMSE teste (°C)
+multivariada,7,8,49,31,0.98,1.154
+multivariada (modelo principal),30,8,66,104,0.963,1.141
+multivariada,60,8,45,134,0.995,1.152
+univariada (só temp_media),30,1,57,91,1.03,1.2
+"multivariada, shuffle=False",30,8,40,68,1.24,1.288
