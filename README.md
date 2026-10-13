@@ -1,6 +1,9 @@
 # LSTM para séries temporais: temperatura diária de Rio Verde-GO
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hOm8uIOrYiDYmf4ErH_pvSOSJSHCEcDK)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/marquesvinicius/lstm-series-temporais/blob/master/lstm_series_temporais.ipynb)
+[![Open in Colab - UniRV](https://img.shields.io/badge/Open%20in%20Colab-UniRV-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1hOm8uIOrYiDYmf4ErH_pvSOSJSHCEcDK)
+
+> O segundo botão abre a cópia no Drive da conta acadêmica (acesso restrito a contas @academico.unirv.edu.br).
 
 **Resultado (teste, 1.900 dias, out./2020 → dez./2025):** RMSE = **1,141 °C** · MAE = **0,783 °C** · R² = 0,794. Isso é **9,4% menos erro (RMSE) que a persistência** ("amanhã = hoje").
 
